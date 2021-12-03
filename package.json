@@ -1,0 +1,38 @@
+{
+  "name": "rebber",
+  "version": "5.2.0",
+  "description": "Stringifies MDAST to LaTeX",
+  "repository": "https://github.com/zestedesavoir/zmarkdown/tree/master/packages/rebber",
+  "author": "Victor Felder <victor@draft.li> (https://draft.li)",
+  "contributors": [
+    "Sébastien (AmarOk) Blin <contact@enconn.fr>",
+    "François (artragis) Dambrine <perso@francoisdambrine.me>",
+    "Victor Felder <victor@draft.li> (https://draft.li)"
+  ],
+  "scripts": {
+    "pretest": "eslint .",
+    "build": "del-cli dist && cross-env BABEL_ENV=production babel src --out-dir dist",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "LICENSE-MIT",
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "mdast",
+    "latex"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "clone": "^2.1.2",
+    "collapse-white-space": "^1.0.6",
+    "has": "^1.0.3",
+    "mdast-util-definitions": "^3.0.1",
+    "trim-lines": "^1.1.3",
+    "xtend": "^4.0.2"
+  }
+}
